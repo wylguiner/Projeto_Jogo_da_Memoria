@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <div class="container">
+        <h2>JOGO DA MEMÓRIA</h2>
+        <div class="settings">
+            <h2>Dificuldade:</h2>
+            <div class="difficulty">
+                <input type="radio" id="facil" name="difficulty" value="facil" checked>
+                <label for="facil">Fácil</label><br>
+                <input type="radio" id="medio" name="difficulty" value="medio">
+                <label for="medio">Médio</label><br>
+                <input type="radio" id="dificil" name="difficulty" value="dificil">
+                <label for="dificil">Difícil</label><br>
+                <input type="radio" id="impossivel" name="difficulty" value="impossivel">
+                <label for="impossivel">Impossível</label>
+            </div>
+            <h2>Vidas:<span id="lives">10</span></h2>
+        </div>
+        
+        <div class="game">
+            <button class="start-game" id="start-game">Começar!</button>
+        </div>
+        <button class="reset" id="reset" onclick="window.location.reload()">RESET GAME</button>
+    </div>
+
+
+
+    <script src="src/scripts/engine.js" defer></script>
+</body>
+</html>
