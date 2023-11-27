@@ -128,3 +128,38 @@ h2 {
     color: #ec38bc;
     background-color: #262809;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+    }
+
+    .container {
+        background: none;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container>h2 {
+        margin-top: 0px;
+        letter-spacing: 1.5px;
+        width: 100vw;
+        padding-left: 20px;
+    }
+
+    .settings {
+        width: 100vw;
+    }
+
+    .settings h2 {
+        letter-spacing: 0px;
+    }
+    
+    .item{
+        height: 90px;
+        width: 90px;
+    }
+
+    .difficulty label {
+    }
+}
